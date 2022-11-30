@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap");
+
+:root {
+  --black: #171321;
+  --dkblue: #0d314b;
+  --plum: #4b0d49;
+  --hotmag: #ff46e9;
+  --magenta: #e310cb;
+  --aqua: #86fbfb;
+  --white: #f7f8fa;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: Oxygen, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--magenta);
+}
+
+a:hover {
+  color: var(--hotmag);
+  text-decoration: none;
+}
+
+/* background colors div */
+#section-plum {
+  background-color: var(--plum);
+}
+
+#section-dkBlue {
+  background-color: var(--dkblue);
+}
+
+/* divider styles */
+.divider {
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 23, 228, 1) 0%,
+    rgba(134, 251, 251, 1) 100%
+  );
+}
+
+/* intro styles */
+#intro {
+  padding: 4rem 1rem 10rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#intro p {
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+}
+
+#intro h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+/* contact styles */
+#contact {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+#contact a {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 2rem;
+}
+
+a.button {
+  font-family: var(--mono);
+  text-decoration: none;
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--hotmag);
+  color: var(--white);
+}
+
+/* navbar styles */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 2rem 1rem;
+}
+
+nav h1 a {
+  font-family: var(--sans);
+}
+
+nav h1 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2rem;
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: var(--magenta);
+}
+
+.nav-icon {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: var(--aqua);
+}
+
+.code-icon {
+  -webkit-mask: url(/images/code-solid.svg) no-repeat 100% 100%;
+  mask: url(code-solid.svg) no-repeat 100% 100%;
+}
+
+.linked-in-icon {
+  -webkit-mask: url(/images/linkedin.svg) no-repeat 100% 100%;
+  mask: url(/images/linkedin.svg) no-repeat 100% 100%;
+}
+
+.github-icon {
+  -webkit-mask: url(/images/github.svg) no-repeat 100% 100%;
+  mask: url(/images/github.svg) no-repeat 100% 100%;
+}
+
+.nav-icon:hover {
+  background-color: var(--magenta);
+}
+
+nav h1 .code-icon {
+  height: 35px;
+  width: 35px;
+}
+
+nav a:hover .code-icon {
+  background-color: var(--aqua);
+}
+
+.mail-icon {
+  -webkit-mask: url(/images/envelope-solid.svg) no-repeat 100% 100%;
+  mask: url(/images/envelope-solid.svg) no-repeat 100% 100%;
+}
+
+.nav-icon.footer-icon {
+  background-color: var(--magenta);
+  width: 40px;
+  height: 40px;
+}
+.footer-icon:hover {
+  background-color: var(--hotmag);
+}
+footer {
+  text-align: center;
+  padding: 3rem 0;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+footer h2 {
+  font-weight: normal;
+}
+
+/* projects section */
+#projects {
+  padding: 4rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3 {
+  color: var(--aqua);
+}
+#projects h4 {
+  font-size: 1rem;
+  font-family: var(--mono);
+  margin: 0;
+}
+
+.blackbox {
+  background-color: var(--black);
+  padding: 1rem;
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+#projects ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+#projects img {
+  margin: 2rem 0 4rem 0;
+  border-left: 1px solid var(--aqua);
+  border-top: 1px solid var(--aqua);
+  border-radius: 25px;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 550px) {
+  article {
+    display: grid;
+    /* here we are providing 10 columns of equal fraction */
+    grid-template-columns: repeat(10, 1fr);
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #projects img {
+    /* here we are providing 5 columns to img */
+    grid-column: 1 / 6;
+    /* here we are saying img will come in 1 row only */
+    grid-row: 1 / 2;
+  }
+
+  article #text {
+    /* here we are providing 6 columns to text */
+    grid-column: 5 / 11;
+    /* here we are specifically saying as we are exceeding no. 
+    of columns so grid tries to place this column in next row but we want this column to come in same row as img */
+    grid-row: 1 / 2;
+    order: 2;
+    text-align: right;
+  }
+
+  #projects ul {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    margin-right: auto;
+  }
+}
