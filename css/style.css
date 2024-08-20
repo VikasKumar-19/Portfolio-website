@@ -174,7 +174,7 @@ nav a:hover {
 
 .code-icon {
   -webkit-mask: url(/images/code-solid.svg) no-repeat 100% 100%;
-  mask: url(code-solid.svg) no-repeat 100% 100%;
+  mask: url(/images/code-solid.svg) no-repeat 100% 100%;
 }
 
 .linked-in-icon {
